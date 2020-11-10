@@ -14,6 +14,9 @@ public class ExportExcel {
 
     @GetMapping("/export")
     public String export(HttpServletResponse response){
+        if (response.getHeaderNames().equals("哈哈")){
+            return "呵呵";
+        }
 
         return "我又修改了东西";
 
